@@ -4,7 +4,7 @@ import yt_dlp
 import customtkinter as ctk
 from tkinter import filedialog, messagebox
 
-# -------------------- Download Function -------------------- #
+# -- Download Function -- #
 def download_video():
     url = url_entry.get()
     choice = format_var.get()
@@ -22,7 +22,7 @@ def download_video():
         ydl_opts = {
             'outtmpl': os.path.join(folder, '%(title)s.%(ext)s'),
             'quiet': True,
-            'ffmpeg_location': r"C:\Users\admin\Downloads\SetUp\ffmpeg-2025-09-01-git-3ea6c2fe25-full_build\bin",  # <-- Change if needed
+            'ffmpeg_location': r"C:\Users\admin\Downloads\SetUp\ffmpeg-2025-09-01-git-3ea6c2fe25-full_build\bin",  # <-- Palitan ng Path kung saan nakalagay ang bin
             'extractor_args': {
                 'youtube': {'player-client': ['web']}
             },
@@ -66,7 +66,7 @@ def start_download():
     thread = threading.Thread(target=download_video)
     thread.start()
 
-# -------------------- UI DESIGN -------------------- #
+# -- UI DESIGN -- #
 ctk.set_appearance_mode("dark")
 ctk.set_default_color_theme("green")
 
@@ -107,3 +107,4 @@ footer_label.pack(side="bottom", pady=10)
 
 # Run App
 window.mainloop()
+

@@ -1,0 +1,72 @@
+🎥 YouTube Video & Audio Downloader
+
+A simple YouTube downloader built with Python and CustomTkinter for a better UI experience.
+Supports downloading MP4 videos with H.264 encoding and MP3 audio conversion.
+
+
+
+🚀 Features
+
+📂 Folder Selection Dialog — Choose where to save your files
+
+📺 Better MP4 Support — Forces H.264 encoding for maximum compatibility
+
+🎵 MP3 Downloads — Converts automatically to audio format
+
+
+
+🛠️ Setup Instructions
+
+Download Required Software
+Python   : https://www.python.org/downloads/
+PyCharm  : https://www.jetbrains.com/pycharm/
+
+Install Required Libraries
+
+Run the following commands in your terminal or command prompt:
+pip install yt-dlp[pyppeteer]
+pip install tk
+pip install yt-dlp customtkinter
+
+
+Install FFmpeg
+
+FFmpeg is required for video encoding and audio conversion.
+
+Download FFmpeg : https://www.gyan.dev/ffmpeg/builds/
+
+Add the Code
+
+Option 1: Copy & paste the provided Python code into your editor.
+
+Option 2: Download the .py file directly and open it.
+
+
+Update the FFmpeg Bin Path
+
+After installing FFmpeg:
+
+Locate the FFmpeg bin folder
+
+Update the code with the correct path to the bin directory
+
+Example:
+
+ffmpeg_path = r"C:\ffmpeg\bin"
+
+
+
+🎮 How to Use
+
+Run the .py file in PyCharm or Command Prompt
+
+Paste the YouTube URL
+
+Choose MP4 or MP3
+
+Select your download folder
+
+Click Download — and you're done! ✅
+
+
+Created by: Alecs :)
